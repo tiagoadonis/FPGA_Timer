@@ -30,4 +30,4 @@ inputs, one for increase the minutes value **(KEY[3])**, one to decrease **(KEY[
 
 The modulation of every block was made in **VHDL** and the implementation/debug was in the **Terasic DE2-11** kit. 
 
-<img src="https://lh3.googleusercontent.com/proxy/rPbuXlo8JzOEpEfVprYUDxZZvQNza9sPymrR767m7iVJPZGowUdOwozTMdlBSZJ0oAxWazz_PTciqxpSDwoBgi5tST9ddSOQTWBNFWa4GMFs9TYa" width="260" heigth="200" align="center">
+<img src="https://lh3.googleusercontent.com/proxy/rPbuXlo8JzOEpEfVprYUDxZZvQNza9sPymrR767m7iVJPZGowUdOwozTMdlBSZJ0oAxWazz_PTciqxpSDwoBgi5tST9ddSOQTWBNFWa4GMFs9TYa" width="260" heigth="200">
