@@ -26,5 +26,8 @@ In this last phase the number and name of blocks are the same as the second phas
 inputs, one for increase the minutes value **(KEY[3])**, one to decrease **(KEY[2])**, one to increase the seconds value **(KEY[1])** and one to decrease
 **(KEY[0])**. This entrances only work if the start **(SW[0] button)** has the value 0. 
 
+<br>
+
 The modulation of every block was made in VHDL and the implementation/debug was in the **Terasic DE2-11** kit. 
 
+<img src="https://lh3.googleusercontent.com/proxy/rPbuXlo8JzOEpEfVprYUDxZZvQNza9sPymrR767m7iVJPZGowUdOwozTMdlBSZJ0oAxWazz_PTciqxpSDwoBgi5tST9ddSOQTWBNFWa4GMFs9TYa" width="260" heigth="200" align="center">
