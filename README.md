@@ -25,3 +25,6 @@ values in the seven-segment displays.
 In this last phase the number and name of blocks are the same as the second phase. Only one suffer some changes in his inputs, the **countdown**. There are more four
 inputs, one for increase the minutes value **(KEY[3])**, one to decrease **(KEY[2])**, one to increase the seconds value **(KEY[1])** and one to decrease
 **(KEY[0])**. This entrances only work if the start **(SW[0] button)** has the value 0. 
+
+The modulation of every block was made in VHDL and the implementation/debug was in the **Terasic DE2-11** kit. 
+
