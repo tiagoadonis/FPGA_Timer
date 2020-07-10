@@ -1,0 +1,68 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity countdown is
+	port(	pauseStart: in std_logic;
+			clk: in std_logic;
+			reset: in std_logic;
+			stop: out std_logic;
+			--como o valor maximo de segundos é 59 e também é considerado que o valor  
+			--maximo de minutos é 59, entao o numero de bits necessarios para cada é 6
+			segundos0: out std_logic_vector(5 downto 0);
+			minutos0: out std_logic_vector(5 downto 0));
+end countdown;
+
+architecture behavioral1 of countdown is
+	signal pauseStart_i : std_logic:='0';
+	signal segundos_i: std_logic_vector(5 downto 0):="111011";
+	signal minutos_i: std_logic_vector(5 downto 0):="111011";
+	signal stop_i: std_logic:='0';
+begin
+
+	process(pauseStart)
+	begin
+		if (reset='1' or (segundos_i="000000" and minutos_i="000000")) then
+			pauseStart_i<='0';
+			
+		elsif rising_edge(pauseStart) then
+				pauseStart_i<= not pauseStart_i;	
+		end if;
+	end process;
+
+	process(clk,reset,segundos_i,minutos_i)
+	begin
+		
+		if reset='1' then
+			segundos_i<="000100";
+			minutos_i<="000000";
+			stop_i<='1';
+		else 
+			if rising_edge(clk) then
+				if (segundos_i="000000" and minutos_i="000000") then
+						stop_i<='1';
+				elsif pauseStart_i='1' then	
+					
+						
+						if segundos_i="000000" then
+							minutos_i<= minutos_i-'1';
+							segundos_i<="111011";
+						else 
+							segundos_i<= segundos_i-'1';
+						end if;
+						stop_i<='0';
+				end if;
+			end if;
+		end if;	
+	end process;
+
+stop<=stop_i;
+segundos0<= segundos_i;
+minutos0<=minutos_i;
+
+end behavioral1;
+			
+				
+		
+	
+	

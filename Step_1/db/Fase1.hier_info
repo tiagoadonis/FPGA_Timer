@@ -1,0 +1,44 @@
+|countdown
+clk => fim_i.CLK
+clk => m_i[0].CLK
+clk => m_i[1].CLK
+clk => m_i[2].CLK
+clk => m_i[3].CLK
+clk => m_i[4].CLK
+clk => m_i[5].CLK
+clk => s_i[0].CLK
+clk => s_i[1].CLK
+clk => s_i[2].CLK
+clk => s_i[3].CLK
+clk => s_i[4].CLK
+clk => s_i[5].CLK
+start => start_i.CLK
+reset => process_0.IN1
+reset => fim_i.PRESET
+reset => m_i[0].PRESET
+reset => m_i[1].PRESET
+reset => m_i[2].ACLR
+reset => m_i[3].PRESET
+reset => m_i[4].PRESET
+reset => m_i[5].PRESET
+reset => s_i[0].PRESET
+reset => s_i[1].PRESET
+reset => s_i[2].ACLR
+reset => s_i[3].PRESET
+reset => s_i[4].PRESET
+reset => s_i[5].PRESET
+fim << fim_i.DB_MAX_OUTPUT_PORT_TYPE
+s[0] << s_i[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] << s_i[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] << s_i[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] << s_i[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] << s_i[4].DB_MAX_OUTPUT_PORT_TYPE
+s[5] << s_i[5].DB_MAX_OUTPUT_PORT_TYPE
+m[0] << m_i[0].DB_MAX_OUTPUT_PORT_TYPE
+m[1] << m_i[1].DB_MAX_OUTPUT_PORT_TYPE
+m[2] << m_i[2].DB_MAX_OUTPUT_PORT_TYPE
+m[3] << m_i[3].DB_MAX_OUTPUT_PORT_TYPE
+m[4] << m_i[4].DB_MAX_OUTPUT_PORT_TYPE
+m[5] << m_i[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

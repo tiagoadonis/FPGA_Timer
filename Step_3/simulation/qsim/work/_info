@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/Desktop/Projeto (LSD)/Fase_3/simulation/qsim
+vtemporizador
+Z1 !s110 1523737169
+!i10b 1
+!s100 GFSGCMTz<KDkI9Lmc1[<G0
+I@Do5Em6?^3T3eSQ>[XZ0D0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1523737168
+8temporizador.vo
+Ftemporizador.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1523737168.000000
+!s107 temporizador.vo|
+!s90 -work|work|temporizador.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vtemporizador_vlg_vec_tst
+R1
+!i10b 1
+!s100 1JdUCRoS[S[Hmf@0[@Wz03
+IL;?F7UAMWNG^FC<_D^nD11
+R2
+R0
+w1523737167
+8teste.vwf.vt
+Fteste.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1523737169.000000
+!s107 teste.vwf.vt|
+!s90 -work|work|teste.vwf.vt|
+!i113 1
+R4
+R5
